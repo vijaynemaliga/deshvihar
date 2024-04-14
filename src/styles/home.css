@@ -1,0 +1,45 @@
+.container{
+   
+    background-color: black;
+    height: 80%;
+    position:relative;
+
+}
+img{
+    width:40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+h1{
+    color:white;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  .slide{
+    display:none;
+  }
+  
+  .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
