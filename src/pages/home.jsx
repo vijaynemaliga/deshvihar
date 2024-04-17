@@ -1,4 +1,6 @@
 import  "../styles/home.css"
+import Header from '../componets/header'
+
 import { useState } from "react"
 export default function  Home(){
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -22,7 +24,8 @@ export default function  Home(){
       };
    
     return(
-        <div>
+        <div className="home_page"> 
+            <Header/>
             <div className="container">
                 {
                     images.map((image,index)=>{
@@ -38,6 +41,7 @@ export default function  Home(){
                <button className="prev" onClick={prevSlide}>&#10094;</button>
                <button className="next" onClick={nextSlide}>&#10095;</button> 
             </div>
-        </div>
+            
+        </div>   
     )
 }
